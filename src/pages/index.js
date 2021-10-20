@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <Container className={styles.pzero} >
       <Head>
-        <title>Create Next App</title>
+        <title>NearNauts</title>
         <link rel="icon" href="/favicon.ico" />
 
         <meta
@@ -30,12 +30,12 @@ export default function Home() {
       <Main className={styles.mainBoard} style={{padding:'0px'}}>
         <div className={styles.mainBoardBackground}>
           <div className={styles.positionPlatform}>
-            <a href="">
+            <a href="https://discord.gg/t8d8xdPsJm" target="_blank">
               <span className={styles.cursorPointer}>
                 <img src="images/discord.webp"/>
               </span>
             </a>
-            <a href="">
+            <a href="https://twitter.com/nearnauts" target="_blank">
               <span className={classNames(styles.marginLeft1rem, styles.cursorPointer)}>
                 <img src="images/twitter.webp"/>
               </span>

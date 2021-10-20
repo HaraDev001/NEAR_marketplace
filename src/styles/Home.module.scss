@@ -69,6 +69,11 @@
   font-weight: bold
 }
 
+.marginLeft1rem {
+  margin-left: 1rem !important;
+}
+
+
 .rotateimg30 {
   -webkit-transform: rotate(340deg);
   -moz-transform: rotate(340deg);
@@ -77,10 +82,12 @@
   transform: rotate(340deg);
   animation-name: imageAnimation;
   // transform: translate(50);
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-timing-function: linear;
   animation-delay: 0s;
   animation-iteration-count: infinite;
+  max-width: 1000px;
+  width: calc(100vw - 50px)
 }
 
 .contentCenter {

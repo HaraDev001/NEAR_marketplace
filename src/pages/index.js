@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import classNames from 'classnames';
 import Head from 'next/head'
 import Container from '../components/Container';
 import Main from '../components/Main';
@@ -7,13 +8,13 @@ import Footer from '../components/Footer';
 import styles from '../styles/Home.module.scss'
 
 export default function Home() {
-  const [show, setShow] = useState(false);
+  // const [show, setShow] = useState(false);
 
-  useEffect(
-    () => {
-      setInterval(()=>setShow(!show), 300)
-    }
-  )
+  // useEffect(
+  //   () => {
+  //     setInterval(()=>setShow(!show), 300)
+  //   }
+  // )
   return (
     <Container className={styles.pzero} >
       <Head>
@@ -29,18 +30,22 @@ export default function Home() {
       <Main className={styles.mainBoard} style={{padding:'0px'}}>
         <div className={styles.mainBoardBackground}>
           <div className={styles.positionPlatform}>
-            <span className={styles.cursorPointer}>
-              <img src="images/discord.webp"/>
-            </span>
-            <span style={{marginLeft:'1rem'}} className={styles.cursorPointer}>
-              <img src="images/twitter.webp"/>
-            </span>
+            <a href="">
+              <span className={styles.cursorPointer}>
+                <img src="images/discord.webp"/>
+              </span>
+            </a>
+            <a href="">
+              <span className={classNames(styles.marginLeft1rem, styles.cursorPointer)}>
+                <img src="images/twitter.webp"/>
+              </span>
+            </a>
           </div>
           <p className={styles.datePosition}>
             01 . 12 . 21
           </p>
           <div className={styles.contentCenter}>
-            <img src="images/Monkey.webp" style={{ maxWidth: "900px", width: 'calc(100vw - 50px)' }} className={ styles.rotateimg30}/>
+            <img src="images/Monkey.webp" className={ styles.rotateimg30}/>
           </div>
         </div>
       </Main>

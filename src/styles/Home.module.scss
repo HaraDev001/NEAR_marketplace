@@ -60,8 +60,8 @@
 }
 
 .datePosition {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
   font-size: 2.5rem;
   color: white;
   text-align: center;
@@ -86,15 +86,31 @@
   animation-timing-function: linear;
   animation-delay: 0s;
   animation-iteration-count: infinite;
-  max-width: 1000px;
-  width: calc(100vw - 50px)
+  max-width: 900px;
+  width: calc(100vw - 50px);
 }
 
-.contentCenter {
+.imageContentCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -3rem
+}
+
+.logoTextContentCenter {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: -2rem
+}
+
+.logoText {
+  max-width: 200px;
+  margin-top: -1rem
+}
+
+.iconPosition {
+  margin-top: -2rem;
 }
 
 @keyframes imageAnimation {
